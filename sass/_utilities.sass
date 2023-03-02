@@ -1,0 +1,54 @@
+@mixin reset
+    *
+        margin: 0
+        padding: 0
+        box-sizing: 0
+        font-family: 'lato'
+
+    a 
+        text-decoration: none
+
+    li 
+        list-style: none
+
+@mixin main-hover
+    transition: .3s
+
+    &:hover
+        color: $primary-color
+
+
+// PLACEHOLDER SELECTORS
+
+%tile-text-shadow
+    text-shadow: 3px 2px 3px $black
+
+//BTNs
+
+.btn
+    padding: .6rem 1rem
+    border: 1px solid $light-color
+    border-radius: 5px
+    text-transform: uppercase
+    transition: .3s 
+    color: $light-color
+    cursor: pointer
+
+    &:hover
+        border-color: $primary-color
+        color: $primary-color
+
+    &-primary
+        background-color: $primary-color
+        border-color: $primary-color
+        color: $light-color
+
+        &:hover
+            background: transparent
+            color: $light-color
+
+    &-rounded
+        margin-top: 1rem
+        border-radius: 2rem
+        padding: 1rem 1.5rem
+        

@@ -1,6 +1,109 @@
-h1 {
-  color: red;
-  font-family: lato;
+#main-banner .title-container h1, #main-banner .title-container h2 {
+  text-shadow: 3px 2px 3px #000;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #FFF;
+  cursor: pointer;
+}
+.btn:hover {
+  border-color: #FF5200;
+  color: #FF5200;
+}
+.btn-primary {
+  background-color: #FF5200;
+  border-color: #FF5200;
+  color: #FFF;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: #FFF;
+}
+.btn-rounded {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#main-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/office.jpg");
+  height: 85vh;
+  backgorund-size: cover;
+  background-position: center;
+}
+#main-banner .nav-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95.5%;
+  padding: 1.5rem 2rem;
+  background-color: #000;
+  z-index: 10;
+}
+#main-banner .nav-container .brand {
+  color: #FFF;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+#main-banner .nav-container .brand:hover {
+  color: #FF5200;
+}
+#main-banner .nav-container-navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#main-banner .nav-container-navbar li {
+  margin: 5px 10px;
+}
+#main-banner .nav-container-navbar li a {
+  color: #FFF;
+  transition: 0.3s;
+}
+#main-banner .nav-container-navbar li a:hover {
+  color: #FF5200;
+}
+#main-banner .nav-container .fas.fa-bars {
+  color: #FFF;
+  font-size: 2rem;
+  display: none;
+}
+#main-banner .title-container {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#main-banner .title-container h2 {
+  font-size: 3rem;
+}
+#main-banner .title-container h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
