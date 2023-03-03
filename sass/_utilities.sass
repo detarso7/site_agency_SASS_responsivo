@@ -17,6 +17,13 @@
     &:hover
         color: $primary-color
 
+// MOBILE
+
+@mixin mobile
+    @media (max-width: 425px)
+        @content
+
+
 
 // PLACEHOLDER SELECTORS
 
@@ -33,7 +40,11 @@
 
 %card-hover
     .job-card-hover, .job-card-title, .job-card-descriptin
-        opacity: 0 
+        opacity: 0
+        @include mobile
+            opacity: 1
+            padding-bottom: 1rem
+            margin-bottom: 1rem
 
     &:hover
         .job-card-hover, .job-card-title, .job-card-descriptin

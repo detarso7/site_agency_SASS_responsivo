@@ -9,6 +9,10 @@
     backgorund-size: cover
     background-position: center
 
+    nav
+        @include mobile
+            display: none
+
     .nav-container
         display: flex
         justify-content: space-between
@@ -19,6 +23,9 @@
         padding: 1.5rem 2rem
         background-color: $black
         z-index: 10
+        @include mobile
+            padding: 1rem
+            width: 94%
 
         .brand
             color: $light-color
@@ -41,6 +48,9 @@
             color: $light-color
             font-size:2rem
             display: none
+            @include mobile
+                display: block
+
            
     .title-container
         color: $light-color
@@ -49,15 +59,24 @@
         align-items: center
         justify-content: center
         height: 100%
+        @include mobile
+            text-align: center
+            padding: 1rem
 
         h2 
             @extend %tile-text-shadow
             font-size: 3rem
+            @include mobile
+                font-size: 2rem
+                
 
         h1 
             font-size: 4rem
             margin-top: 1rem
             @extend %tile-text-shadow
+            @include mobile
+                font-size: 3rem
+                margin-bottom: 1rem
 
 .services-container
     text-align: center
@@ -72,6 +91,8 @@
         flex-wrap: wrap
         justify-content: space-around
         padding: 2rem
+        @include mobile
+            padding: 1rem
 
         .services-card
             width: 25%
@@ -79,6 +100,8 @@
             padding: 2rem
             border: 1px solid #CCC
             transition: .3s
+            @include mobile
+                width: 100%
 
             &:hover
                 box-shadow: 0 1px 10px #CCC
@@ -108,6 +131,8 @@
     .jobs-list
         display: flex
         padding: 2rem
+        @include mobile
+            flex-direction: column 
 
         .first-job
             width:30%
@@ -118,11 +143,18 @@
             cursor: pointer
             @extend %center-bg
             @extend %card-hover
+            @include mobile
+                width:100%
+                margin-bottom: 2rem
+                height: 200px
 
     .other-jobs-container
         display: flex
         flex-wrap: wrap
         width: 68%
+        @include mobile
+            width: 100%
+            display-direction: column
 
         .job-card
             width: 46%
@@ -134,6 +166,10 @@
             cursor: pointer
             @extend %center-bg
             @extend %card-hover
+            @include mobile
+                width: 100%
+                height: 200px
+                margin-bottom: 2rem
 
         #job2
             background-image: url('../img/job2.jpg')
@@ -155,6 +191,8 @@
         height: 100%
         background-color: rgba(0, 0, 0, .6)
         border: 2px solid $primary-color
+        @include mobile
+            height: 200px
 
         .job-card-title
             text-align: center
@@ -162,12 +200,19 @@
             font-weight: bold
             color: $light-color
             padding: 1rem
+            @include mobile
+                padding: 0
+                
+
+
 
         .job-card-descriptin
             text-align: center
             color: $light-color
             padding: 1rem
             font-size: .9rem
+            @include mobile
+                padding: 0
 
 footer
     background-color: $footer-bg
@@ -179,6 +224,9 @@ footer
         margin: 0 auto
         display: flex
         flex-wrap: wrap
+        @include mobile
+            max-width: 100%
+            flex-direction: column
 
         .footer-title
             font-weight: bold
@@ -187,17 +235,27 @@ footer
 
     .footer-desc-container, .footer-link-container
         width: 50%
+        @include mobile
+            width: 100%
+            margin-bottom: 2rem
+            text-align: center
 
     .footer-desc-container
         p
             width: 80%
             line-height: 1.3rem
+            @include mobile
+                width: 100%
 
     .footer-link-container
         display: flex
+        @include mobile
+            flex-direction: column
 
         &-list 
             padding: 0 1rem
+            @include mobile
+                margin-bottom: 0.5rem
 
             li 
                 margin-bottom: 0.5rem
@@ -212,6 +270,8 @@ footer
     .footer-copy-right-container
         width:100%
         margin-top: 3rem
+        @include mobile
+            text-align: center
 
         p 
             margin-bottom: 1.5rem
