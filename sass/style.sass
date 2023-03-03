@@ -98,4 +98,23 @@
             p 
                 color: $text-color
             
-            
+.jobs-container
+    background-color: $secondary-bg
+    padding: 2rem
+
+    h2
+        @extend %section-tile
+
+    .jobs-list
+        display: flex
+        padding: 2rem
+
+        .first-job
+            width:30%
+            height: 415px
+            background-image: url('../img/first.png')
+            position: relative
+            transition: .3s
+            cursor: pointer
+            @extend %center-bg
+            @extend %card-hover
