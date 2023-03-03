@@ -2,6 +2,11 @@
   text-shadow: 3px 2px 3px #000;
 }
 
+.services-container h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .btn {
   padding: 0.6rem 1rem;
   border: 1px solid #FFF;
@@ -22,7 +27,7 @@
 }
 .btn-primary:hover {
   background: transparent;
-  color: #FFF;
+  color: #FF5200;
 }
 .btn-rounded {
   margin-top: 1rem;
@@ -104,6 +109,43 @@ li {
 #main-banner .title-container h1 {
   font-size: 4rem;
   margin-top: 1rem;
+}
+
+.services-container {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.services-container .services-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.services-container .services-card-container .services-card {
+  width: 25%;
+  margin: 15px 0;
+  padding: 2rem;
+  border: 1px solid #CCC;
+  transition: 0.3s;
+}
+.services-container .services-card-container .services-card:hover {
+  box-shadow: 0 1px 10px #CCC;
+  border: transparent;
+}
+.services-container .services-card-container .services-card i {
+  color: #FF5200;
+  font-size: 4rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.services-container .services-card-container .services-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.services-container .services-card-container .services-card p {
+  color: #8B8E94;
 }
 
 /*# sourceMappingURL=style.css.map */
